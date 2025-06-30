@@ -1,4 +1,4 @@
- @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+ @import "https://cdn.jsdelivr.net/npm/@glidejs/glide/src/assets/sass/glide.core";
 *{
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
@@ -12,7 +12,7 @@ body{
 .container{
     width: 1000px;
     height: auto;
-    margin: 10px auto;
+    margin: 0px auto;
     background-color: white;
     border: 1px solid gainsboro;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
@@ -81,4 +81,59 @@ body{
     height: 350px;
     /* overflow: hidden; */
 }
+.content-holder{
+    display: flex;
+    justify-content: space-between;
+    background-color: cornflowerblue;
+    border-bottom: 1px solid gainsboro;
+}
+.content-holder .content{
+    padding: 25px;
+    background-color: white;
+    width: 80%;    
+}
+.content-holder .content h1 ~ h2{
+    font-size: 1em;
+    color: darkgrey;
+}
+.sidebar{
+    padding: 25px;
+    width: 20%;
 
+}
+.sidebar .widget h3{
+    color: white;
+}
+.sidebar .widget ul, .footer-widget ul {
+    list-style-type: none ;
+    padding: 0px;
+    margin: 0px;
+}
+
+.sidebar .widget ul > li > a, .footer-widget ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+.sidebar .widget ul > li > a:hover{
+    color: black;
+}
+.footer-widget-holder{
+    display: flex;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    justify-content: space-around;
+}
+.footer-widget{
+    padding: 25px;
+    font-size: small;
+}
+.site-footer{
+    background-color: black;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+.site-footer p {
+    margin: 0px;
+    
+}
