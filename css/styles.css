@@ -227,6 +227,13 @@ body{
     .footer-widget-holder .footer-widget{
         padding: 10px 25px;
     }
+    .main-menu > ul {
+        flex-direction: column;
+    }
+    .services-holder {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* Responsive Web Design */
